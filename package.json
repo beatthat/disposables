@@ -1,6 +1,6 @@
 {
   "name": "unity-disposable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "disposable",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/beatthat/unity-disposable",
   "scripts": {
-    "postinstall": "node scripts/postinstall.js"
+    "postinstall": "node scripts/postinstall.js",
+    "install:test": "rm -f *.tgz && npm pack && cd test && npm run clean && npm install"
   },
   "dependencies": {
     "ncp": "^2.0.0",
