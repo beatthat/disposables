@@ -1,11 +1,12 @@
 {
-  "name": "unity-disposable",
-  "version": "0.0.2",
-  "description": "disposable",
+  "name": "disposables",
+  "scope": "ape",
+  "version": "0.0.4",
+  "description": "interface for wrapping assets in a disposable, e.g. Disposable<Texture2D>",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beatthat/unity-disposable.git"
+    "url": "git+https://github.com/beatthat/disposables.git"
   },
   "files": [
     "index.js",
@@ -15,12 +16,14 @@
   "author": "larrykirschner@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beatthat/unity-disposable/issues"
+    "url": "https://github.com/beatthat/disposables/issues"
   },
-  "homepage": "https://github.com/beatthat/unity-disposable",
+  "homepage": "https://github.com/beatthat/disposables",
   "scripts": {
     "postinstall": "node scripts/postinstall.js",
-    "install:test": "rm -f *.tgz && npm pack && cd test && npm run clean && npm install"
+    "install:test": "rm -f *.tgz && npm pack && cd test && npm run clean && npm install",
+    "clean": "rm -f *.tgz && cd test && npm run clean",
+    "sync:test2src": "rsync -rv --include '*/' --include '*.cs' --exclude '*' --prune-empty-dirs test/Assets/Plugins/${npm_package_scope}/${npm_package_name}/ ./src/${npm_package_name}/"
   },
   "dependencies": {
     "ncp": "^2.0.0",
