@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace BeatThat
+namespace BeatThat.Disposables
 {
 	public class ResourceAssetDisposable<T> : Disposable<T> where T : class
 	{

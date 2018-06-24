@@ -1,5 +1,5 @@
 ﻿
-namespace BeatThat
+namespace BeatThat.Disposables
 {
 	/// <summary>
 	/// Assets that have been downloaded generally get disposed via UnityEngine.Object.DestroyImmediate

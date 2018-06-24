@@ -15,8 +15,7 @@ From your unity project folder:
     echo Assets/packages >> .gitignore
     echo Assets/packages.meta >> .gitignore
 
-The package and all its dependencies will be installed in
-your Assets/packages folder.
+The package and all its dependencies will be installed under Assets/Plugins/packages.
 
 ## Development
 

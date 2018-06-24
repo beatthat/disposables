@@ -1,6 +1,6 @@
 ﻿
 
-namespace BeatThat
+namespace BeatThat.Disposables
 {
 	/// <summary>
 	/// For assets assigned as a property to a monobehaviour.
