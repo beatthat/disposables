@@ -10,9 +10,14 @@ namespace BeatThat.Disposables
 			this.item = item;
 		}
 
-		public T item { get; set; } 
+		public T item { get; set; }
 
-		public void DisposeItem()
+        public void Dispose()
+        {
+            DisposeItem();
+        }
+
+        public void DisposeItem()
 		{
 			if(this.item == null) {
 				return;
