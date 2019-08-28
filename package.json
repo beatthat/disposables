@@ -1,7 +1,7 @@
 {
   "name": "disposables",
   "scope": "beatthat",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "interface for wrapping assets in a disposable, e.g. Disposable<Texture2D>",
   "main": "index.js",
   "repository": {
